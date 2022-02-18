@@ -48,5 +48,11 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DuckLibrary\DuckLibrary.csproj">
+      <Project>{b48419eb-31d7-499a-bacd-145f29127c84}</Project>
+      <Name>DuckLibrary</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
