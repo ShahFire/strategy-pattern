@@ -6,12 +6,11 @@ using System.Threading.Tasks;
 
 namespace DuckLibrary
 {
-    public abstract class Duck
+    public class FlyWithWings : Flyable
     {
-        public string Swim()
+        public string Fly()
         {
-            return "Swim " + this.GetType();
+            return "Хлоп, хлоп, хлоп";
         }
-        public abstract string Display();
     }
 }

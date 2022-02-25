@@ -6,15 +6,11 @@ using System.Threading.Tasks;
 
 namespace DuckLibrary
 {
-    public class RubberDuck : Duck, Quackable
+    public class Squek : Quackable
     {
-        public override string Display()
-        {
-            return "Display " + this.GetType();
-        }
         public string Quack()
         {
-            return "Quack " + this.GetType();
+            return "Пи, пи, пи";
         }
     }
 }

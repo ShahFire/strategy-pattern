@@ -6,11 +6,12 @@ using System.Threading.Tasks;
 
 namespace DuckLibrary
 {
-    public class DecoyDuck : Duck
+    public class MallardDuck : Duck
     {
-        public override string Display()
+        public MallardDuck()
         {
-            return "Display " + this.GetType();
+            flyBehavior = new FlyWithWings();
+            quackBehavior = new DQuack();
         }
     }
 }

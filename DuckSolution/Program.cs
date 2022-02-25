@@ -22,17 +22,11 @@ namespace DuckProject
             {
                 Console.WriteLine(ducks[i].Swim());
                 Console.WriteLine(ducks[i].Display());
-                if (ducks[i] is Quackable)
-                {
-                    Console.WriteLine((ducks[i] as Quackable).Quack());
-                }
-
-                if (ducks[i] is Flyable)
-                {
-                    Console.WriteLine((ducks[i] as Flyable).Fly());
-                }
-
+                Console.WriteLine(ducks[i].runFly());
+                Console.WriteLine(ducks[i].runQuack());
+                Console.WriteLine("\n");
             }
+
 
             Console.ReadKey();
         }
