@@ -22,8 +22,8 @@ namespace DuckProject
             {
                 Console.WriteLine(ducks[i].Swim());
                 Console.WriteLine(ducks[i].Display());
-                Console.WriteLine(ducks[i].runFly());
-                Console.WriteLine(ducks[i].runQuack());
+                Console.WriteLine(ducks[i].RunFly());
+                Console.WriteLine(ducks[i].RunQuack());
                 Console.WriteLine("\n");
             }
 
