@@ -19,11 +19,11 @@ namespace DuckLibrary
         {
             return this.GetType() + " " + this.flyBehavior + " " + this.quackBehavior;
         }
-        public string runQuack()
+        public string RunQuack()
         {
             return quackBehavior.Quack();
         }
-        public string runFly()
+        public string RunFly()
         {
             return flyBehavior.Fly();
         }

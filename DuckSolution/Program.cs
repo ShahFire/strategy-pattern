@@ -16,14 +16,21 @@ namespace DuckProject
             Duck Ruby = new RubberDuck();
             Duck Devid = new DecoyDuck();
 
+            Flyable flywithwings = new FlyWithWings();
+            Quackable quackings = new DQuack();
+
+            Ruby.SetFlyBehavior(flywithwings);
+            Ruby.SetQuackBehavir(quackings);
+
             Duck[] ducks = { Mark, Riley, Ruby, Devid };
+
 
             for (int i = 0; i < ducks.Length; i++)
             {
                 Console.WriteLine(ducks[i].Swim());
                 Console.WriteLine(ducks[i].Display());
-                Console.WriteLine(ducks[i].runFly());
-                Console.WriteLine(ducks[i].runQuack());
+                Console.WriteLine(ducks[i].RunFly());
+                Console.WriteLine(ducks[i].RunQuack());
                 Console.WriteLine("\n");
             }
 
